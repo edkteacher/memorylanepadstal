@@ -1,0 +1,458 @@
+/* Custom styles */
+body {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background:
+    url('./images/VintagePaper.png') repeat,
+    linear-gradient(to bottom right, #c97b63, #a34e4e, #5a1d1d);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fdf6f0;
+}
+
+    @media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
+
+    header .lead {
+      font-style: italic;
+    }
+    h2 {
+      color: #8B0000;
+    }
+    .btn-primary {
+      background-color: #8B0000;
+      border-color: #8B0000;
+    }
+    .btn-primary:hover {
+      background-color: #a30000;
+    }
+    footer {
+      background-color: #000;
+    }
+    .vintage-map-container {
+      border: 10px double #8B5E3C;  /* rustic brown double border */
+      padding: 20px;
+      background-color: #f8f1e4;    /* light parchment background */
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* soft shadow */
+      border-radius: 12px;
+      max-width: 100%;
+      margin: 2rem auto;
+    }
+    
+    .vintage-map-container iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: none; 
+      border-radius: 6px;
+    }
+    
+
+.vintage-sign {
+  background: #8b2f2f; /* deep rustic red */
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  border: 4px double #f4e1c1; /* creamy yellow border */
+  border-radius: 12px;
+  color: #fef9f3;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.3),
+              0 8px 20px rgba(0,0,0,0.4);
+  position: relative;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.02) 0px,
+    rgba(255,255,255,0.02) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+}
+
+/* Optional: decorative ends */
+.vintage-sign::before,
+.vintage-sign::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  background: #6e1e1e;
+  transform: translateY(-50%) rotate(45deg);
+  box-shadow: inset -2px -2px 4px rgba(0,0,0,0.4);
+  z-index: -1;
+}
+
+.vintage-sign::before {
+  left: -15px;
+}
+
+.vintage-sign::after {
+  right: -15px;
+}
+
+
+.vintage-frame {
+  border: 12px solid #5a3e36; /* Deep wood tone */
+  padding: 8px;
+  background: linear-gradient(145deg, #e0c9a6, #d6b48f); /* Aged matting */
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.4),
+    inset 0 0 10px rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  max-width: 100%;
+  position: relative;
+}
+
+.vintage-frame::before {
+  content: "";
+  position: absolute;
+  top: -8px; left: -8px; right: -8px; bottom: -8px;
+  background: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+  opacity: 0.2;
+  z-index: 0;
+  border-radius: 16px;
+  pointer-events: none;
+}
+
+.vintage-frame img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+    /* .ribbon {
+      background: linear-gradient(to bottom, #690505, #880e0e); 
+      display: inline-block;
+      padding: 1.5rem 3rem;
+      border-radius: 0.9rem;
+      position: relative;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      color: #fff;
+      font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  opacity: 0.9;
+    }
+    
+
+    .ribbon::before,
+    .ribbon::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      background: #7b241c;
+      transform: translateY(-50%) rotate(45deg);
+      z-index: -1;
+    }
+    
+    .ribbon::before {
+      left: -10px;
+    }
+    
+    .ribbon::after {
+      right: -10px;
+    } */
+    
+
+
+
+header.bg-image {
+  position: relative;
+  background: url('./images/memorylane-padstal.jpg') center/cover no-repeat;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 4rem 1rem;
+}
+
+header.bg-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(to right, #5c3a2e, #8d6651, #5c3a2e);
+  opacity: 0.5;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;/* v Controls the dimming */
+  /* background: rgba(80, 45, 15, 0.4);  */
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+header.bg-image .container {
+  position: relative;
+  z-index: 2;
+}
+
+header.bg-image h1, 
+header.bg-image p {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* Responsive typography */
+header.bg-image h1 {
+  font-size: 2.5rem;
+}
+
+header.bg-image p {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  header.bg-image {
+    min-height: 75vh;
+    padding: 6rem 2rem;
+  }
+
+  header.bg-image h1 {
+    font-size: 4rem;
+  }
+
+  header.bg-image p {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* NAVBAR ENHANCEMENT */
+.navbar {
+  background: rgba(50, 15, 10, 0.7); /* Deep warm transparency */
+  backdrop-filter: blur(6px);
+  border-bottom: 3px double #d6bfa8; /* Aged cream border */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  padding: 0.8rem 1rem;
+}
+
+/* Add a wood grain texture */
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* NAVBAR BRAND */
+.navbar-brand {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fef9f3;
+  text-shadow: 1px 1px 2px #000;
+  padding: 0.2rem 1rem;
+  border: 3px double #f4e1c1;
+  background-color: #6e1e1e;
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.2), 0 4px 12px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 2;
+}
+
+/* NAV LINKS VINTAGE STYLE */
+.navbar-nav .nav-link {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(145deg, #8b2f2f, #5a1d1d);
+  color: #fff !important;
+  margin: 0 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.2), 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background: linear-gradient(145deg, #a64444, #762626);
+  transform: scale(1.05);
+  border-color: #f4e1c1;
+}
+
+/* .vintage-border {
+  border: 4px double #8B0000;
+  padding: 2px;
+  background-color: #000;
+} */
+
+.splide__slide img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.splide__slide img:hover {
+  transform: scale(1.05);
+}
+
+.splide__slide .image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Makes it a perfect square */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.splide__slide .image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* Keeps aspect ratio, fills the square */
+  object-position: center;
+  border-radius: 12px;
+}
+
+#image-carousel {
+  background: linear-gradient(135deg, #f3e2c7, #dfc4a3);
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 2rem 1rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+  border: 6px double #6e4f3a;
+  position: relative;
+  overflow: hidden;
+}
+#image-carousel .splide__track {
+  background-color: rgba(255, 248, 230, 0.5); /* parchment tone */
+  border-radius: 12px;
+  padding: 1rem;
+  backdrop-filter: blur(2px);
+}
+
+.splide__arrow {
+  background-color: #6e4f3a;
+  color: #fef9f3;
+  border: 2px solid #f4e1c1;
+}
+.splide__arrow:hover {
+  background-color: #8b2f2f;
+}
+
+
+.vintage-gallery-frame {
+  border: 14px solid #6e4f3a; /* Dark wood tone */
+  padding: 12px;
+  background: linear-gradient(135deg, #f3e2c7, #dfc4a3); /* Aged mat background */
+  box-shadow:
+    inset 0 0 10px rgba(0, 0, 0, 0.3),
+    0 6px 12px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.vintage-gallery-frame::before {
+  content: "";
+  position: absolute;
+  top: -10px; bottom: -10px; left: -10px; right: -10px;
+  background: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 20px;
+}
+
+.vintage-gallery-frame .splide {
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: soften the carousel images if needed */
+.splide__slide img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.splide__slide img:hover {
+  transform: scale(1.03);
+}
+
+.vintage-sign-box {
+  background: #8b2f2f; /* deep rustic red */
+  padding: 1.5rem 3rem;
+  border: 4px double #f4e1c1; /* creamy yellow border */
+  border-radius: 12px;
+  color: #fef9f3;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.3),
+              0 8px 20px rgba(0,0,0,0.4);
+  position: relative;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.02) 0px,
+    rgba(255,255,255,0.02) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  display: block;
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Optional: decorative ends */
+.vintage-sign-box::before,
+.vintage-sign-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  background: #6e1e1e;
+  transform: translateY(-50%) rotate(45deg);
+  box-shadow: inset -2px -2px 4px rgba(0,0,0,0.4);
+  z-index: -1;
+}
+
+.vintage-sign-box::before {
+  left: -15px;
+}
+
+.vintage-sign-box::after {
+  right: -15px;
+}
+
+
+

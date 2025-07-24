@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Lane Padstal</title>
+  <!-- Lightbox2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Frank+Ruhl+Libre:wght@300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+
+  <!-- Navbar -->
+  
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+
+          <h1 class="display-4 mb-1">Memory Lane Padstal</h1>
+          <!-- <p class="lead mb-0">Farm-fresh produce, antiques, and a taste of home</p> -->
+       </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link nav-about" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-gallery" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link nav-contact" href="#contact">Contact</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <!-- <header class="bg-image">
+     <div class="bg-overlay"></div>
+     <div class="container text-white text-center maincontainer">
+
+    </div>
+  </header> -->
+
+  <!-- About Section -->
+  <section id="about" class="py-5" data-aos="slide-right">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="vintage-frame">
+            <img src="images/memorylane-padstal.jpg" class="img-fluid" alt="About us">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="vintage-sign">
+          <h2 class="text-white">About Us</h2>
+          <p class="text-white">Memory Lane Padstal is a family-run farm stall in the heart of Swartruggens, offering fresh produce, handmade crafts, and delicious treats. Come visit us and experience true South African hospitality.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section with Splide -->
+  
+  <section id="gallery" class="bg-image py-5" data-aos="slide-left">
+    <div class="container">
+      <div class="vintage-sign-box">
+        <!-- <h2 class="text-center text-white mb-4">Gallery</h2> -->
+        <div id="image-carousel" class="splide" aria-label="Google Drive Gallery">
+          <div class="splide__track">
+            <ul class="splide__list" id="gallery-list">
+              <!-- Images will be injected here -->
+
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+ <!-- REVIEWS -->
+    <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+    <div class="container">
+    <div class="vintage-sign-box"> 
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-b473ac78-8d8d-415f-b189-dbc690b8bf71" data-elfsight-app-lazy data-aos="slide-right"></div>
+</div>
+</div>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <div class="vintage-sign-box">
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="text-white">Contact Us</h4>
+          <p class="text-white">Phone: 071 119 5262</p>
+          <p class="text-white">Email: memorylanepadstal@gmail.com</p>
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-white">Visit Us</h4>
+          <p class="text-white">Dardanella Street<br>Swartruggens, 2835</p>
+          <div class="vintage-map-container mt-3">
+            <iframe src="https://www.google.com/maps?q=Memory+Lane+Padstal,+Dardanella+street,+Swartruggens,+2835&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <!-- <footer class="text-white text-center py-3">
+    <div class="container">
+      <small>&copy; 2025 Memory Lane Padstal. All rights reserved.</small>
+    </div>
+  </footer> -->
+
+  
+<!-- Lightbox2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1600,     // animation duration in ms
+    once: true,        // only animate once on scroll
+    easing: 'ease-in-out',
+  });
+</script>
+
+</body>
+</html>
